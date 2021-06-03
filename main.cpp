@@ -7,6 +7,7 @@ bool checkwin1(char arr[],bool stat){
 
   char player[2] ={'0','X'};
    
+  // Horizantally winning combination
   if ( ( ( ( (arr [0] == arr[1]) && (arr[0]== arr[2]) && (arr[1] == arr[2]) )) && (( (arr [0] == player[0]) && (arr[1]== player[0]) && (arr[1] == player[0]) ) ) )
   || ( ( ( (arr [3] == arr[4]) && (arr[3]== arr[5]) && (arr[4] == arr[5]) )) && (( (arr [3] == player[0]) && (arr[4]== player[0]) && (arr[5] == player[0]) ) ) ) || ((( (arr [6] == arr[7]) && (arr[6]== arr[8]) && (arr[7] == arr[8]) )) && (( (arr [6] == player[0]) && (arr[7]== player[0]) && (arr[8] == player[0]) ) ) ) )
   {
@@ -14,7 +15,7 @@ bool checkwin1(char arr[],bool stat){
   return true ;
 
   } 
-    
+     // Vertically winning combination
   else if  ( ( ( ( (arr [0] == arr[3]) && (arr[0]== arr[6]) && (arr[3] == arr[6]) )) && (( (arr [0] == player[0]) && (arr[3]== player[0]) && (arr[6] == player[0]) ) ) )
   || ((( (arr [1] == arr[4]) && (arr[1]== arr[7]) && (arr[4] == arr[7]) )) && (( (arr [1] == player[0]) && (arr[4]== player[0]) && (arr[7] == player[0]) )) ) || ((( (arr [2] == arr[5]) && (arr[2]== arr[8]) && (arr[5] == arr[8]) )) && (( (arr [2] == player[0]) && (arr[5]== player[0]) && (arr[8] == player[0]) ) ) ) )
   {
@@ -22,7 +23,7 @@ bool checkwin1(char arr[],bool stat){
   return true ;  
      
   }
-      
+       // Diagonally winning combination
  else if ( ( ( ( (arr [0] == arr[4]) && (arr[0]== arr[8]) && (arr[4] == arr[8]) )) && (( (arr [0] == player[0]) && (arr[4]== player[0]) && (arr[8] == player[0]) )) )
   || ((( (arr [2] == arr[4]) && (arr[2]== arr[6]) && (arr[4] == arr[6]) )) && (( (arr [2] == player[0]) && (arr[4]== player[0]) && (arr[6] == player[0]) ) ) ) )
   {
@@ -44,6 +45,7 @@ bool checkwin1(char arr[],bool stat){
 
   char player[2] ={'0','X'};
     
+    // Horizantally winning combination
   if ( ( ( ( (arr [0] == arr[1]) && (arr[0]== arr[2]) && (arr[1] == arr[2]) )) && (( (arr [0] == player[1]) && (arr[1]== player[1]) && (arr[1] == player[1]) )) )
   || ((( (arr [3] == arr[4]) && (arr[3]== arr[5]) && (arr[4] == arr[5]) )) && (( (arr [3] == player[1]) && (arr[4]== player[1]) && (arr[5] == player[1]) )) ) || ((( (arr [6] == arr[7]) && (arr[6]== arr[8]) && (arr[7] == arr[8]) )) && (( (arr [6] == player[1]) && (arr[7]== player[1]) && (arr[8] == player[1]) ) ) ) )
   {
@@ -51,7 +53,7 @@ bool checkwin1(char arr[],bool stat){
   return true ;
     
   } 
-    
+     // Vertically winning combination
   else if  ( ( ( ( (arr [0] == arr[3]) && (arr[0]== arr[6]) && (arr[3] == arr[6]) )) && (( (arr [0] == player[1]) && (arr[3]== player[1]) && (arr[6] == player[1]) )) )
   || ((( (arr [1] == arr[4]) && (arr[1]== arr[7]) && (arr[4] == arr[7]) )) && (( (arr [1] == player[1]) && (arr[4]== player[1]) && (arr[7] == player[1]) )) ) || ((( (arr [2] == arr[5]) && (arr[2]== arr[8]) && (arr[5] == arr[8]) )) && (( (arr [2] == player[1]) && (arr[5]== player[1]) && (arr[8] == player[1]) ) ) ) )
   {
@@ -60,7 +62,7 @@ bool checkwin1(char arr[],bool stat){
   
   }
     
-  
+   // Diagonally winning combination
  else if ( ( ( ( (arr [0] == arr[4]) && (arr[0]== arr[8]) && (arr[4] == arr[8]) )) && (( (arr [0] == player[1]) && (arr[4]== player[1]) && (arr[8] == player[1]) )) )
   || ((( (arr [2] == arr[4]) && (arr[2]== arr[6]) && (arr[4] == arr[6]) )) && (( (arr [2] == player[1]) && (arr[4]== player[1]) && (arr[6] == player[1]) ) ) ) )
   {
